@@ -1,0 +1,179 @@
+:root{
+    --success:#28A745;
+    --negro:#000000;
+    --gris1:#707070;
+    --gris2:#707070A0;
+    --gris3:#DDDDDD;
+    --white:#ffffff;
+    --light:#F8F9FA;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.navbar{
+    padding:0;
+    margin:0;
+}
+.navbar p{
+    width: 12vw;
+    padding: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0 20px;
+    font-size: 1.2em;
+}
+#menu{
+    justify-content: flex-end;
+}
+.container-fluid{
+    background-color: var(--success);
+    margin:0;
+}
+.cupones{
+    margin:10px;
+}
+.cupones i{
+    margin-right:5px;
+}
+.card{
+    width: 32%;
+    margin:5px;
+    padding:0;
+    box-shadow: 2px 2px var(--gris3);
+}
+.card-header{
+    margin:0;
+    padding:0;
+}
+.card-header img{
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.card-body{
+    padding: 20px 30px;
+}
+.card-body h2{
+    color:var(--negro);
+    font-size: 1.4em;
+    margin-bottom:30px;
+}
+.card-body h3{
+    color:var(--gris2);
+    font-size: 1em;
+}
+.card-body h4{
+    color:var(--gris2);
+    font-size: 0.8em;
+}
+.card-footer{
+    text-align: right;
+    background-color: var(--white);
+}
+.card-footer span{
+    margin:20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+.antes{
+    font-weight: 300;
+    font-size: 1.2em;
+}
+.ahora{
+    font-weight: 500;
+    color:var(--success);
+    font-size: 1.6em;
+}
+.form{
+    background-color: var(--success);
+    padding: 80px 20vw;
+}
+.form h2{
+    color:var(--white);
+    font-size: 1.6em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin:20px 0;
+}
+.form input[type=text],input[type=email]{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin:10px 0;
+    font-size: 1.2em;
+}
+.form .btn{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+footer div{
+    text-align: center;
+    margin:30px 45vw;
+}
+footer p{
+    color: var(--gris1);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+}
+@media (max-width: 576px) {
+    #menu{
+        justify-content: flex-start;
+        padding:20px 0;
+    }
+    #menu ul{
+        padding: 0;
+        margin: 0;
+    }
+    #menu ul li{
+        padding:5px 0;
+        border-top:1px solid #fff;
+    }
+
+    .navbar p{
+        width: 35vw;
+        padding-top: 20px;
+    }
+    .card{
+        width: 98%;
+        margin:25px 5px;
+        padding:0;
+    }
+    .form{
+        padding: 60px 20px;
+    }
+    footer div{
+        text-align: center;
+        margin:30px 35vw;
+    }
+}
